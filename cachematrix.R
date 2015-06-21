@@ -2,14 +2,12 @@
 #
 # Copyright (C) 2015, Diego Rabatone Oliveira <diraol(at)diraol(dot)eng(dot)br>
 #
-# This file is part of Radar Parlamentar.
-#
-# Radar Parlamentar is free software: you can redistribute it and/or modify
+# This is a free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
 #
-# Radar Parlamentar is distributed in the hope that it will be useful,
+# It is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
@@ -57,7 +55,7 @@ makeCacheMatrix <- function(x = matrix()) {
 # matrix. If it has, then the function returns the cached version. If not,    #
 # then it calculates the inverted matrix, caches it and then returns it.      #
 ###############################################################################
-cacheSolve <- function(x, ...) {
+cacheSolve <- function(x) {
     inv <- x$getinverse()
 
     if(!is.null(inv)) {
